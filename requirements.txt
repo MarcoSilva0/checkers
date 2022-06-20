@@ -1,0 +1,5 @@
+You need install the pygame, use this comand
+pip install pygame (if you programming in Windows ou pip3 if you stay in MACOS)
+
+I create one modulo(api) for construct game checkers for I can use later with IA
+I try write this document in english but I will translate de vars and const for PT_BR
