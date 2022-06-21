@@ -11,13 +11,6 @@ class Piece:
         self.color = color
         self.queen = False
         # self.selected = False
-        
-        #Condition for the game to know if it goes up or down
-        if self.color == GREY:
-            self.direction = 1
-        else:
-            self.direction = 1
-        
         self.x = 0
         self.y = 0
         self.calc_pos()
