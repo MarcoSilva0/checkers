@@ -1,5 +1,6 @@
 import pygame
 from checkers.constants import WIDTH, HEIGHT
+from checkers.board import Board
 #Here I drawn basic forms geme
 #The FPS const not included in constants because this info is important for me(user) no important for the game
 FPS = 60
@@ -13,6 +14,7 @@ def main():
     run = True
     #The clock is for define the game FPS for equalize the for all user PC
     clock = pygame.time.Clock()
+    board = Board()
 
     while run:
         clock.tick(FPS)
@@ -25,6 +27,9 @@ def main():
             #Look the event click of the mouse
             if event.type == pygame.MOUSEBUTTONDOWN:
                 pass
+
+        board.draw_squares(WIN)
+        pygame.display.update()
 
     pygame.quit()
 
